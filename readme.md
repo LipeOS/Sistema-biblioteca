@@ -53,8 +53,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests o
 
 ### Autor
 
-Seu Nome
+Felipe Oliveira Silva
 
 ### Licença
 
-Este projeto está licenciado sob a [Licença XYZ](link-da-licenca).
+Este projeto está licenciado sobre o proprio (@Lipe_zkz)
