@@ -1,4 +1,4 @@
-Projeto Biblioteca - Sistema de Gerenciamento de Livros
+<h1> Projeto Biblioteca - Sistema de Gerenciamento de Livros </h1>
 
 Descrição:
 Este é um projeto de exemplo de um sistema de gerenciamento de uma biblioteca de livros, desenvolvido em Flask com integração ao MySQL. Permite adicionar livros, pesquisar por título ou autor, editar a quantidade de livros e excluir livros da biblioteca.
