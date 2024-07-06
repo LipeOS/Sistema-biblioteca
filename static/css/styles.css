@@ -1,0 +1,180 @@
+/* Reset básico para remoção de margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/1.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container principal */
+.wrapper {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    padding: 20px 30px;
+    opacity: 0.95;
+}
+
+/* Título principal */
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+
+/* Container de livros */
+.book-container {
+    margin-bottom: 20px;
+}
+
+.book-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: center;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rótulos */
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Caixas de entrada */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botões */
+button {
+    cursor: pointer;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Estilo para links de recuperação de senha */
+.remenber-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remenber-forgot label input {
+    accent-color: #007BFF;
+    margin-right: 5px;
+}
+
+.remenber-forgot a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.remenber-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Caixas de entrada personalizadas */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #999;
+}
+
+/* Ícones das caixas de entrada */
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+}
+
+/* Estilo dos resultados da pesquisa */
+.book {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.book h3 {
+    margin-bottom: 10px;
+}
+
+.book p {
+    margin-bottom: 5px;
+}
+
+.book form {
+    margin-top: 10px;
+}
+
+.book form label {
+    margin-bottom: 5px;
+}
+
+.book form input {
+    margin-bottom: 10px;
+}
+
+.buscar{
+    margin-top: 1rem;
+}
