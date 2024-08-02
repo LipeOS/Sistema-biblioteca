@@ -1,40 +1,60 @@
-<h1> Projeto Biblioteca - Sistema de Gerenciamento de Livros </h1>
+## Projeto Flask com MySQL - Biblioteca
 
-Descrição:
-Este é um projeto de exemplo de um sistema de gerenciamento de uma biblioteca de livros, desenvolvido em Flask com integração ao MySQL. Permite adicionar livros, pesquisar por título ou autor, editar a quantidade de livros e excluir livros da biblioteca.
+Este é um projeto básico utilizando Flask com integração ao MySQL para gerenciar uma biblioteca de livros.
 
-Funcionalidades:
-- Adicionar Livros: Permite inserir novos livros no sistema, especificando título, autor, gênero, editora, ano de publicação e quantidade.
-- Pesquisar Livros: Realiza buscas por título ou autor, retornando os livros que correspondem ao critério de pesquisa.
-- Editar Quantidade: Permite atualizar a quantidade disponível de um livro na biblioteca.
-- Excluir Livros: Remove um livro da biblioteca, ajustando automaticamente os IDs dos livros restantes.
+### Pré-requisitos
 
-Tecnologias Utilizadas:
-- Flask: Framework web em Python para desenvolvimento do backend.
-- MySQL: Banco de dados relacional utilizado para armazenar informações sobre os livros.
-- Flask-MySQLdb: Extensão Flask para facilitar a integração com o MySQL.
+- Python: [Download Python](https://www.python.org/downloads/)
+- Flask: Instale usando `pip install Flask`
+- MySQL Server: Baixe e instale em [dev.mysql.com](https://dev.mysql.com/downloads/mysql/)
+- Flask-MySQLdb: Instale usando `pip install Flask-MySQLdb`
 
-Instruções para Inicialização:
-1. Clone o Repositório:
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
-   
-2. Instale as Dependências:
-   pip install -r requirements.txt
-   
-3. Configuração do MySQL:
-   - Crie um banco de dados chamado 'biblioteca'.
+### Configuração
+
+1. Clone o repositório ou baixe o código-fonte.
+2. Instale as dependências: `pip install -r requirements.txt`
+3. Configure o MySQL:
+   - Crie um banco de dados chamado `biblioteca`.
    - Execute o script SQL para criar a tabela de livros dentro do banco de dados.
    
-4. Execute o Projeto:
-   python app.py
-   
-5. Acesse a Aplicação:
-   Abra seu navegador e vá para http://localhost:5000/ para acessar a aplicação.
+CREATE DATABASE biblioteca;
 
-Nota: Certifique-se de ter o Python e o MySQL instalados em seu ambiente de desenvolvimento antes de prosseguir com a instalação e execução do projeto.
+USE biblioteca;
 
-Para mais detalhes sobre a estrutura do projeto e o código-fonte, consulte os arquivos no diretório do projeto.
+CREATE TABLE livros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    genero VARCHAR(255) NOT NULL,
+    editora VARCHAR(255) NOT NULL,
+    ano INT NOT NULL,
+    quantidade INT DEFAULT 0
+);
 
----
-Este arquivo README fornece uma visão geral do projeto, suas funcionalidades principais, as tecnologias utilizadas e instruções básicas para começar a trabalhar com o sistema de gerenciamento de biblioteca.
+
+4. Edite as configurações do MySQL no arquivo `app.py` conforme necessário.
+
+### Executando o Projeto
+
+1. No terminal, navegue até o diretório do projeto.
+2. Execute o comando: `python app.py`
+3. Abra seu navegador e vá para `http://localhost:5000/` para acessar a aplicação.
+
+### Funcionalidades
+
+- Adicionar livros
+- Pesquisar livros por título ou autor
+- Editar quantidade de livros
+- Excluir livros da biblioteca
+
+### Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou reportar problemas.
+
+### Autor
+
+Felipe Oliveira Silva
+
+### Licença
+
+Este projeto está licenciado sobre o proprio (@Lipe_zkz)
